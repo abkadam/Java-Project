@@ -19,6 +19,7 @@ public class Google {
 		driver.findElement(By.name("ConfirmPasswd")).sendKeys("abhishek@8695");
 		driver.findElement(By.className("CwaK9")).click();
 		driver.findElement(By.xpath("//*[@id=\"phoneNumberId\"]")).sendKeys("7350998779");
+		driver.findElement(By.xpath("//*[@id=\"phoneNumberId\"]")).sendKeys("7350998779");
 		
 		
 	}
