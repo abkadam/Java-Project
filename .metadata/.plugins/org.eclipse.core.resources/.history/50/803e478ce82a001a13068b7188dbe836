@@ -1,0 +1,24 @@
+package Testing;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
+
+public class Google {
+
+	public static void main(String[] args) {
+		
+		System.setProperty("webdriver.chrome.driver", "D:\\Abhishek\\chromedriver.exe");
+		ChromeDriver driver=new ChromeDriver();
+		driver.get("https://accounts.google.com/");
+		
+		Actions hover=new Actions(driver);
+		
+		driver.findElement(By.xpath("//*[@id=\"ow272\"]/span/span")).click();
+		driver.findElement(By.className("jO7h3c")).click();
+		/*WebElement acc=driver.findElement(By.linkText("For myself"));*/
+		
+		
+	}
+}
